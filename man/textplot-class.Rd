@@ -2,15 +2,39 @@
 % Please edit documentation in R/textplot.R
 \docType{class}
 \name{textplot-class}
+\alias{[,textplot-method}
+\alias{show,textplot-method}
 \alias{textplot}
 \alias{textplot-class}
 \title{textplot}
+\usage{
+\S4method{show}{textplot}(object)
+
+\S4method{[}{textplot}(x, i, j, drop)
+}
+\arguments{
+\item{object}{The object to be shown}
+
+\item{x}{the object to subset}
+
+\item{i}{the rows to subset}
+
+\item{j}{the columns to subset}
+
+\item{drop}{should be missing}
+}
 \description{
 An S4 class to hold test and cartesian coordinates for plotting
 
 A class designed to hold the data required to create a textplot
 where character strings are plotted based on x and y coordinates
 }
+\section{Methods (by generic)}{
+\itemize{
+\item \code{show}: show method
+
+\item \code{[}: extract method
+}}
 \section{Slots}{
 
 \describe{

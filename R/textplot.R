@@ -1,6 +1,15 @@
-#
-#
-#
+#' @title 
+#' textplot
+#' @description 
+#' An S4 class to hold test and cartesian coordinates for plotting
+#' 
+#' A class designed to hold the data required to create a textplot
+#' where character strings are plotted based on x and y coordinates
+#' 
+#' @slot x A numeric value with the x coordinates
+#' @slot y A numeric value with the y coordinates
+#' @slot labels A character string wit hthe text to be plotted
+#' @import methods
 textplot <- setClass(
   Class = "textplot",
   slots = c(
@@ -36,7 +45,10 @@ textplot <- setClass(
     }
   }
 )
-#
+#' @describeIn textplot show method
+#' 
+#' @param object The object to be shown
+#' @importFrom utils head
 setMethod(
   f = "show",
   signature = "textplot",
@@ -48,7 +60,14 @@ setMethod(
     cat("Labels: ")
     cat(head(object@labels, 5), fill = TRUE)
   })
-#
+#' @describeIn textplot extract method
+#' 
+#' @param x the object to subset
+#' @param i the rows to subset
+#' @param j the columns to subset
+#' @param drop should be missing
+#' @export
+#' @aliases [,textplot-method
 setMethod(
   f = "[",
   signature = "textplot",
