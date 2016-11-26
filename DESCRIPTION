@@ -1,0 +1,10 @@
+Package: AdvancedRPkg
+Title: An example of an R package from the book "Advanced R"
+Version: 0.0.0.9000
+Authors@R: person("Oscar", "Garcia-Cabrejo", email = "khaors@gmail.com", role = c("aut", "cre"))
+Description: This package shows how to create a package in R.
+Depends: R (>= 3.3.2)
+Suggests: testthat
+License: GPL (>=3)
+Encoding: UTF-8
+LazyData: true
