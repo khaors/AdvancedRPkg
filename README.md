@@ -1,3 +1,3 @@
 # AdvancedRPkg
 
-This is a simple example of a R package.
+This is a simple example of an R package.
